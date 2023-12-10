@@ -32,7 +32,7 @@ export default function Hero() {
         
         <div className='relative'>
         <Image src={'/pizza.png'} layout={'fill'} 
-        objectFit={'contain'}alt={'pizza'} />
+        objectFit={'contain'} alt={'pizza'} />
         </div>
         
     </section>
