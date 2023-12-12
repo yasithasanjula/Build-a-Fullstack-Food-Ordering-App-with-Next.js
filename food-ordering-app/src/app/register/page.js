@@ -2,7 +2,7 @@
 import Image from 'next/image'
 import { useState } from 'react'
 
-export default function registerpage() {
+export default function RegisterPage() {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     function handleFormSubmit(ev){
