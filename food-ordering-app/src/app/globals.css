@@ -15,6 +15,15 @@ input[type='text'] {
     
 }
 
+input[type='email']:disabled,
+input[type='password']:disabled,
+input[type='text']:disabled {
+    @apply bg-gray-300 cursor-not-allowed;
+    
+}
+
+
+
 button{
     @apply block w-full font-semibold text-gray-700;
     @apply px-6 py-2 border border-gray-300 rounded-xl;
@@ -22,4 +31,8 @@ button{
 
 button[type='submit'], .submit{
     @apply text-white border-0 bg-primary;
+}
+
+button[type='submit']:disabled, .submit:disabled{
+    @apply bg-red-400 cursor-not-allowed;
 }
