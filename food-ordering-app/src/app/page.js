@@ -10,6 +10,7 @@ export default function Home() {
       
       <Hero />
       <HomeMenu />
+      
       <section className='my-16 text-center'>
         <SectionHeaders 
           subHeader={'Our story'}
