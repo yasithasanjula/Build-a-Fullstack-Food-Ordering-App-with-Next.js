@@ -21,11 +21,11 @@ export default function Hero() {
             <div className='flex gap-4 text-sm'>
                 <button className="flex items-center justify-center gap-2 px-4 py-2 text-white uppercase rounded-full bg-primary">
                     Order now 
-                    <Right /> 
+                    <Right/> 
                 </button>
                 <button className='flex items-center gap-2 py-2 font-semibold text-gray-600 border-0 '>
                     Learn more
-                    <Right />
+                    <Right/>
                 </button>
             </div>
         </div>
