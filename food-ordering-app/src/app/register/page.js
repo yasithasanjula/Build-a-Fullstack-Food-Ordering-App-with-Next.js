@@ -61,7 +61,7 @@ export default function RegisterPage() {
         </div>
         <button
           onClick={() => signIn('google', {callbackUrl:'/'})}
-          className="flex justify-center gap-4">
+          className="flex justify-center gap-4" >
           <Image src={'/google.png'} alt={''} width={24} height={24} />
           Login with google
         </button>
