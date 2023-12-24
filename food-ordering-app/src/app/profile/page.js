@@ -1,5 +1,5 @@
 'use client';
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import {useSession} from 'next-auth/react';
 import {redirect} from 'next/navigation';
 import Image from 'next/image';
@@ -7,8 +7,14 @@ import Image from 'next/image';
 
 export default function page() {
   const session = useSession();
-  const [userName, setUserName] = useState(session?.data?.user?.name || ' ');
+  const [userName, setUserName] = useState(' ');
   const {status} = session;
+
+  useEffect(() => {
+    if(status === 'authenticated'){
+      setUserName(session.data.user.name);
+    }
+  }, [session, status]);
 
   async function handleProfileInfoUpdate(ev) {
     ev.preventDefault();
